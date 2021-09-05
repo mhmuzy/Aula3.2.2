@@ -9,8 +9,11 @@ h1 {
 
 ul.listaBonita > li {
   list-style: none;
-  border: 2px solid #a0a0a0;
+  border-width: 2px;
+  border-color: #a0a0a0;
   padding: 4px 8px;
+  border-left-style: solid;
+  border-right-style: solid;
 }
 
 ul.listaBonita {
@@ -18,6 +21,7 @@ ul.listaBonita {
 }
 
 ul.listaBonita > li:first-child {
+  border-top-style: solid;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -25,8 +29,23 @@ ul.listaBonita > li:first-child {
 ul.listaBonita > li:last-child {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+}
+
+ul.listaBonita > li:hover {
+  background-color: #ebebeb;
 }
 
 ul.listaBonita > li.selecionado {
-  background-color: #2e79db;
+  background-color: #bfdbff;
+  border-color: #2e79db;
+  border-bottom-style: solid;
 }
+
+ul.listaBonita > li:not(.selecionado) + li {
+  border-bottom-style: solid;
+}
+
+
+
+
