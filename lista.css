@@ -9,8 +9,24 @@ h1 {
 
 ul.listaBonita > li {
   list-style: none;
+  border: 2px solid #a0a0a0;
+  padding: 4px 8px;
 }
 
 ul.listaBonita {
   color: #353535;
+}
+
+ul.listaBonita > li:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+ul.listaBonita > li:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+ul.listaBonita > li.selecionado {
+  background-color: #2e79db;
 }
